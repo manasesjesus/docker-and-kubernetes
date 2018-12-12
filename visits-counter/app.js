@@ -13,8 +13,10 @@ client.set("visits", 0);
 // Increase and store the number of visits
 app.get("/", (req, res) => {
     client.get("visits", (err, visits) => {
-        client.set("visits", parseInt(visits) + 1);
-        res.send("This page has been visited " + visits + " times");
+        let total_visits = parseInt(visits) + 1;
+
+        client.set("visits", total_visits);
+        res.send("This page has been visited " + total_visits + " times!");
     });    
 });
 
