@@ -1,5 +1,6 @@
 const express = require("express");
 const redis = require("redis");
+const process = require("process");
 
 const app = express();
 const client = redis.createClient({
@@ -17,6 +18,11 @@ app.get("/", (req, res) => {
 
         client.set("visits", total_visits);
         res.send("This page has been visited " + total_visits + " times!");
+
+        // Aborting... docker will restart the container as specified in the yml file
+        if (total_visits > 5) {
+            process.exit(0);
+        }
     });    
 });
 

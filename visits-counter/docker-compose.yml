@@ -4,6 +4,7 @@ services:
   redis-server:
     image: "redis"
   node-app:
+    restart: always
     build: .
     ports:
       - "80:8080"
