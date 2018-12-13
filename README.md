@@ -1,8 +1,8 @@
 # Docker and Kubernetes: The Complete Guide
 
 Build, test and deploy Docker applications with Kubernetes while learning production-style development workflows.
-<BR><BR>
-This repository contains the exercises from the course with my additions/modifications/notes. <BR>
+<br><br>
+This repository contains the exercises from the course with my additions/modifications/notes. <br>
 Course available at https://www.udemy.com/docker-and-kubernetes-the-complete-guide
 
 ## redis-image
@@ -17,3 +17,7 @@ A node.js application that counts the number of page visits. It uses two contain
 
 Docker compose creates the two containers (redis, node); both have free access to each other and can exchange as much information as they need.
 
+## react-app
+A bootstrapped React application running on a container. <br>
+Multi-step docker build process to have a build phase and a run phase. <br>
+It uses Nginx to serve the application. 
