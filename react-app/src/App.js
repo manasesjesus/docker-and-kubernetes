@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Hello World of React! <br />
-            <em>[running on a docker container]</em>
+            <em>[running on a docker container by docker-compose]</em>
           </p>
           <a
             className="App-link"
