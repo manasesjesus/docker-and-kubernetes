@@ -1,0 +1,14 @@
+# version of docker compose
+version: "3"
+
+# services to include
+services:
+  react-webapp: 
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports: 
+      - "3000:3000"
+    volumes: 
+      - /usr/app/node_modules
+      - .:/usr/app
