@@ -9,7 +9,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Hello World of React! <br />
+            <em>[running on a docker container by docker-compose]</em>
           </p>
           <a
             className="App-link"

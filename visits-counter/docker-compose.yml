@@ -1,5 +1,7 @@
 # version of docker compose
 version: "3"
+
+# services to include
 services:
   redis-server:
     image: "redis"
