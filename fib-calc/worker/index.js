@@ -8,13 +8,13 @@ const redisClient = redis.createClient({
     retry_strategy: () => 1000
 });
 
-// duplicate the redis client to...
-const sub = redisClient.duplicate();
-
 // Fibonacci classic implementation
 function fib (i) {
     return i < 2 ? 1 : fib(i - 1) + fib(i - 2);
 }
+
+// duplicate the redis client
+const sub = redisClient.duplicate();
 
 // subscription on new message (index)
 sub.on("message", (channel, message) => {
