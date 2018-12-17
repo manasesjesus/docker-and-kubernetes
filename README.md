@@ -21,3 +21,6 @@ Docker compose creates the two containers (redis, node); both have free access t
 A bootstrapped React application running on a container. <br>
 Multi-step docker process to have a build phase and a run phase. <br>
 It uses Nginx to serve the application. 
+
+## fib-calc
+A "complicated" version of a fibonacci calculator. 
