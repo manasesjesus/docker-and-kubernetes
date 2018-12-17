@@ -23,4 +23,4 @@ Multi-step docker process to have a build phase and a run phase. <br>
 It uses Nginx to serve the application. 
 
 ## fib-calc
-A "complicated" version of a fibonacci calculator. 
+A "complicated" version of a fibonacci calculator. It runs on a Nginx server, uses React for the frontend and Express for the backend API. All calculated values get stored in a Postgres database and it uses Redis for the logs.
