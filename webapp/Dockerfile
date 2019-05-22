@@ -4,7 +4,7 @@ FROM node:alpine
 # Specify working directory
 WORKDIR /usr/app
 
-# Install dependencies 
+# Install dependencies and copy resources
 COPY ./package.json ./
 RUN npm install
 COPY ./ ./
@@ -17,7 +17,7 @@ CMD ["npm", "start"]
 # Terminal commands
 
 # Build and tag the image 
-# docker build -t manases/webapp .
+# docker build -t mj/webapp .
 
 # Run the container with port forwarding
-# docker run -p 5000:8080 manases/webapp
+# docker run -p 5000:8080 mj/webapp
