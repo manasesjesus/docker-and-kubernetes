@@ -1,18 +1,17 @@
 # Docker and Kubernetes: The Complete Guide
 
 Build, test and deploy Docker applications with Kubernetes while learning production-style development workflows.
-<br><br>
-This repository contains the exercises from the course with my additions/modifications/notes. <br>
+
+This repository contains the exercises from the course with my additions/modifications/notes.
 Course available at https://www.udemy.com/docker-and-kubernetes-the-complete-guide
-<br><br>
 
 ## fib-calc
-A multicontainer and "complicated" version of a Fibonacci calculator. It runs on a Nginx server, uses React for the frontend and Express for the backend API. All calculated values get stored in a Postgres database and it uses Redis for the logs. A worker process watches Redis for new indexes and calculates the Fibonacci value. 
+A multicontainer and "complicated" version of a Fibonacci calculator. It runs on a Nginx server, uses React for the frontend and Express for the backend API. All calculated values get stored in a Postgres database and it uses Redis for the logs. A worker process watches Redis for new indexes and calculates the Fibonacci value.
 
 ## react-app
-A bootstrapped React application running on a container. <br>
-Multi-step Docker process to have a build phase and a run phase. <br>
-It uses Nginx to serve the application. 
+A bootstrapped React application running on a container.
+Multi-step Docker process to have a build phase and a run phase.
+It uses Nginx to serve the application.
 
 ## redis-image
 Use an existing user image as a base, download and install a dependency and tell the image what to do when it starts as a container.
